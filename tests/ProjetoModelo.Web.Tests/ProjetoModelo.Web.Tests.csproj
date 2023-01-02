@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProjetoModelo.Web\ProjetoModelo.Web.csproj" />
+    <ProjectReference Include="..\..\src\ProjetoModelo.Web\ProjetoModelo.Web.csproj" />
   </ItemGroup>
 
 </Project>

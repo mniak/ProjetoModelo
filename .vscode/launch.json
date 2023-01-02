@@ -6,8 +6,8 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-web",
-            "program": "${workspaceFolder}/ProjetoModelo.Web/bin/Debug/net7.0/ProjetoModelo.Web.dll",
-            "cwd": "${workspaceFolder}/ProjetoModelo.Web",
+            "program": "${workspaceFolder}/src/ProjetoModelo.Web/bin/Debug/net7.0/ProjetoModelo.Web.dll",
+            "cwd": "${workspaceFolder}/src/ProjetoModelo.Web",
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             }
@@ -17,8 +17,8 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-web-tests",
-            "program": "${workspaceFolder}/ProjetoModelo.Web.Tests/bin/Debug/net7.0/ProjetoModelo.Web.Tests.dll",
-            "cwd": "${workspaceFolder}/ProjetoModelo.Web.Tests",
+            "program": "${workspaceFolder}/tests/ProjetoModelo.Web.Tests/bin/Debug/net7.0/ProjetoModelo.Web.Tests.dll",
+            "cwd": "${workspaceFolder}/tests/ProjetoModelo.Web.Tests",
         }
     ]
 }

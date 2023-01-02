@@ -23,7 +23,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/ProjetoModelo.Web/ProjetoModelo.Web.csproj",
+                "${workspaceFolder}/src/ProjetoModelo.Web/ProjetoModelo.Web.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -35,7 +35,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/ProjetoModelo.Web.Tests/ProjetoModelo.Web.Tests.csproj",
+                "${workspaceFolder}/tests/ProjetoModelo.Web.Tests/ProjetoModelo.Web.Tests.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -47,7 +47,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/ProjetoModelo.Web/ProjetoModelo.Web.csproj",
+                "${workspaceFolder}/src/ProjetoModelo.Web/ProjetoModelo.Web.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -61,7 +61,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/ProjetoModelo.Web/ProjetoModelo.Web.csproj"
+                "${workspaceFolder}/src/ProjetoModelo.Web/ProjetoModelo.Web.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
