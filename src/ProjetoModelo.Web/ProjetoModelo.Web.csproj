@@ -9,6 +9,7 @@
     <ProjectReference Include="..\ProjetoModelo.Infrastructure.MSSQL\ProjetoModelo.Infrastructure.MSSQL.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.4.0-rc.1" />
     <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc9.10" />
   </ItemGroup>
 </Project>
