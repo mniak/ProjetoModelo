@@ -9,7 +9,8 @@
             "program": "${workspaceFolder}/src/ProjetoModelo.Web/bin/Debug/net7.0/ProjetoModelo.Web.dll",
             "cwd": "${workspaceFolder}/src/ProjetoModelo.Web",
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4318"
             }
         },
         {

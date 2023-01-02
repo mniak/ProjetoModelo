@@ -1,15 +1,20 @@
 ﻿using OpenTelemetry;
+using OpenTelemetry.Logs;
 using ProjetoModelo.Web.Infra.Modules;
 
 namespace ProjetoModelo.Web.Modules
 {
     internal class OpenTelemetryModule : IModule
     {
-        const string serviceName = "MyCompany.MyProduct.MyService";
-        const string serviceVersion = "1.0.0";
-
         public void ConfigureBuilder(WebApplicationBuilder builder)
         {
+            builder.Services.AddLogging(b =>
+            {
+                b.AddOpenTelemetry(o => {
+                    o.AddOtlpExporter();
+                });
+            });
+
             builder.Services.AddOpenTelemetry()
                 .WithTracing()
                 .WithMetrics()
