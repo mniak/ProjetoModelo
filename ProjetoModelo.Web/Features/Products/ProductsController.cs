@@ -10,7 +10,7 @@ namespace ProjetoModelo.Web.Features.Products
 
         public ProductsController(IProductService service)
         {
-            this.service = service;
+            this.service = service ?? throw new ArgumentNullException(nameof(service));
         }
 
         internal const string RouteGetById = nameof(ProductsController) + "." + nameof(RouteGetById);
@@ -39,14 +39,11 @@ namespace ProjetoModelo.Web.Features.Products
         {
             // TODO: Convert from API models if necessary
             var id = await service.SaveNewAsync(product);
-            return CreatedAtRoute(RouteGetById, new
-            {
-                Id = id,
-            });
+            return CreatedAtRoute(RouteGetById, new ProductIdObject(id));
         }
 
         [HttpPost, Route("{id}")]
-        public async Task<IActionResult> SaveIntoId([FromRoute] int id, [FromBody] Product product)
+        public async Task<IActionResult> SaveIntoIdAsync([FromRoute] int id, [FromBody] Product product)
         {
             // TODO: Convert from API models if necessary
             await service.SaveIntoIdAsync(id, product);
