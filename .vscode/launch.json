@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ProjetoModelo.Web",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-web",
+            "program": "${workspaceFolder}/ProjetoModelo.Web/bin/Debug/net7.0/ProjetoModelo.Web.dll",
+            "cwd": "${workspaceFolder}/ProjetoModelo.Web",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        {
+            "name": "ProjetoModelo.Web.Tests",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-web-tests",
+            "program": "${workspaceFolder}/ProjetoModelo.Web.Tests/bin/Debug/net7.0/ProjetoModelo.Web.Tests.dll",
+            "cwd": "${workspaceFolder}/ProjetoModelo.Web.Tests",
+        }
+    ]
+}
