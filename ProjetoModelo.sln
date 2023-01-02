@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoModelo.Web", "ProjetoModelo.Web\ProjetoModelo.Web.csproj", "{464D87BA-4849-4527-BDA5-616534D06034}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoModel.Infrastructure.MSSQL", "ProjetoModel.Infrastructure.MSSQL\ProjetoModel.Infrastructure.MSSQL.csproj", "{B28AE249-E425-43D2-B059-AE70889676D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoModelo.Infrastructure.MSSQL", "ProjetoModel.Infrastructure.MSSQL\ProjetoModelo.Infrastructure.MSSQL.csproj", "{B28AE249-E425-43D2-B059-AE70889676D5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoModelo", "ProjetoModelo\ProjetoModelo.csproj", "{FC211C77-F3EE-4B77-9AC7-E0A012881BD2}"
 EndProject
@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B0390A56
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoModelo.Tests", "ProjetoModelo.Tests\ProjetoModelo.Tests.csproj", "{8CFE9963-ED9F-4011-855C-55F082EE430F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoModelo.Web.Tests", "ProjetoModelo.Web.Tests\ProjetoModelo.Web.Tests.csproj", "{9B979F9E-7556-4122-89D5-4F307B7A5211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoModelo.Web.Tests", "ProjetoModelo.Web.Tests\ProjetoModelo.Web.Tests.csproj", "{9B979F9E-7556-4122-89D5-4F307B7A5211}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

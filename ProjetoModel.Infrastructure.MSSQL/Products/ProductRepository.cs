@@ -1,6 +1,6 @@
 ﻿using ProjetoModelo.Products;
 
-namespace ProjetoModel.Infrastructure.MSSQL.Products
+namespace ProjetoModelo.Infrastructure.MSSQL.Products
 {
     internal class ProductRepository : IProductByIdReader
     {
