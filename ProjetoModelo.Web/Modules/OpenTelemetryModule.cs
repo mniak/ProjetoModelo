@@ -3,7 +3,7 @@ using ProjetoModelo.Web.Infra.Modules;
 
 namespace ProjetoModelo.Web.Modules
 {
-    public class OpenTelemetryModule : IModule
+    internal class OpenTelemetryModule : IModule
     {
         const string serviceName = "MyCompany.MyProduct.MyService";
         const string serviceVersion = "1.0.0";

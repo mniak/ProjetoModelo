@@ -2,8 +2,10 @@ using ProjetoModelo.Web.Infra.Modules;
 using ProjetoModelo.Web.Modules;
 
 var modules = new List<IModule>(){
+    new ExceptionHandlingModule(),
     new ApiModule(),
     new OpenTelemetryModule(),
+    new FeaturesModule(),
 };
 
 var builder = WebApplication.CreateBuilder(args);

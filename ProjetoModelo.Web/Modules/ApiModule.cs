@@ -2,7 +2,7 @@
 
 namespace ProjetoModelo.Web.Modules
 {
-    public class ApiModule : IModule
+    internal class ApiModule : IModule
     {
         public void ConfigureBuilder(WebApplicationBuilder builder)
         {

@@ -2,7 +2,7 @@
 
 namespace ProjetoModelo.Infrastructure.MSSQL.Products
 {
-    internal class ProductRepository : IProductByIdReader
+    public class ProductRepository : IProductByIdReader
     {
         public Task<Product> GetProductByIdAsync(int id)
         {

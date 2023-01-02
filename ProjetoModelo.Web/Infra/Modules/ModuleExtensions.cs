@@ -1,6 +1,6 @@
 ﻿namespace ProjetoModelo.Web.Infra.Modules
 {
-    public static class ModuleExtensions
+    internal static class ModuleExtensions
     {
         public static void AddModules(this WebApplicationBuilder builder, IEnumerable<IModule> modules)
         {
