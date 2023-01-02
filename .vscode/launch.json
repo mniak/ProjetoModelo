@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ProjetoModelo.Web",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-web",
+            "program": "${workspaceFolder}/src/ProjetoModelo.Web/bin/Debug/net7.0/ProjetoModelo.Web.dll",
+            "cwd": "${workspaceFolder}/src/ProjetoModelo.Web",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4318"
+            }
+        },
+        {
+            "name": "ProjetoModelo.Web.Tests",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-web-tests",
+            "program": "${workspaceFolder}/tests/ProjetoModelo.Web.Tests/bin/Debug/net7.0/ProjetoModelo.Web.Tests.dll",
+            "cwd": "${workspaceFolder}/tests/ProjetoModelo.Web.Tests",
+        }
+    ]
+}
