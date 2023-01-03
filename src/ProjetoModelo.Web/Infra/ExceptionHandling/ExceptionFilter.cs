@@ -5,6 +5,12 @@ namespace ProjetoModelo.Web.Infra.ExceptionHandling
 {
     internal class ExceptionFilter : IAsyncExceptionFilter
     {
+        private readonly ILogger logger;
+
+        public ExceptionFilter(ILogger<ExceptionFilter> logger)
+        {
+            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
         public Task OnExceptionAsync(ExceptionContext context)
         {
             switch (context.Exception)
@@ -14,6 +20,7 @@ namespace ProjetoModelo.Web.Infra.ExceptionHandling
                     {
                         StatusCode = StatusCodes.Status500InternalServerError,
                     };
+                    logger.LogError(context.Exception, "Unexpected error. Returning status 500.");
                     break;
             }
             if (context.Result != null)

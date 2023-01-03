@@ -4,7 +4,7 @@ using ProjetoModelo.Web.Modules;
 var modules = new List<IModule>(){
     new ExceptionHandlingModule(),
     new ApiModule(),
-    new OpenTelemetryModule(),
+    new ObservabilityModule(),
     new FeaturesModule(),
 };
 
