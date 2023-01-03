@@ -1,12 +1,20 @@
-﻿using ProjetoModelo.Products;
+﻿using System.Data;
+using ProjetoModelo.Products;
 
 namespace ProjetoModelo.Infrastructure.MSSQL.Products
 {
     public class ProductRepository : IProductByIdReader
     {
-        public Task<Product> GetProductByIdAsync(int id)
+        private readonly IDbConnection db;
+
+        public ProductRepository(IDbConnection db)
         {
-            throw new NotImplementedException();
+            this.db = db ?? throw new ArgumentNullException(nameof(db));
+        }
+        public async Task<Product> GetProductByIdAsync(int id)
+        {
+            var result = await db.QueryFirstAsync<Product>("select * from products where id = ?");
+            return result;
         }
     }
 }
