@@ -13,7 +13,9 @@ namespace ProjetoModelo.Infrastructure.MSSQL.Products
         }
         public async Task<Product> GetProductByIdAsync(int id)
         {
-            var result = await db.QueryFirstAsync<Product>("select * from products where id = ?");
+            var result = await db.QueryFirstAsync<Product>(@"
+                select * from (values (@id, 'Notebook')) as t (Id, Name)
+                where id = @id", new {id});
             return result;
         }
     }

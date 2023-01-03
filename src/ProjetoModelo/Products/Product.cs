@@ -1,4 +1,4 @@
 ﻿namespace ProjetoModelo.Products
 {
-    public record Product(int Id);
+    public record Product(int Id, string Name);
 }
